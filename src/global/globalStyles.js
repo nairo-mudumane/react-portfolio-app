@@ -7,7 +7,7 @@ export default createGlobalStyle`
 	--color-white-1: #f8f8f2;
 	--color-white-2: #949495;
 	--color-white-3: #636363;
-	--gradient-primary: linear-gradient(45deg, #4d19e6, #b219e6, #e619b3);
+	--gradient-primary: linear-gradient(-45deg,#4d19e6,#b219e6,#e73c7e,#23a6d5,#ee7752,#23d5ab, #e619b3);
 }
 
 *,
