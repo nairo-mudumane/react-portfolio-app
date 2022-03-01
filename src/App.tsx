@@ -1,12 +1,12 @@
 import React from "react";
-import { Header } from "./components";
 import { GlobalStyles } from "./global";
+import { UnderMaintence } from "./pages";
 
 export const App = () => {
     return (
         <>
             <GlobalStyles />
-            <Header />
+            <UnderMaintence />
         </>
     );
 };
