@@ -87,7 +87,7 @@ export const UnderMaintenceStyles = styled.div`
 
     @media only screen and (max-width: 425px) {
         .content {
-            padding-top: 12rem;
+            padding-top: 10rem;
         }
         .title {
             font-size: 1em;
