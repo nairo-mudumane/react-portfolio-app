@@ -1,17 +1,12 @@
-import { ScrollableData } from "./components";
+import React from "react";
+import { Header } from "./components";
 import { GlobalStyles } from "./global";
 
-function App() {
+export const App = () => {
     return (
         <>
             <GlobalStyles />
-            <ScrollableData>
-                <div style={{ height: "200vh" }}>
-                    <p>aoisfoai</p>
-                </div>
-            </ScrollableData>
+            <Header />
         </>
     );
-}
-
-export default App;
+};

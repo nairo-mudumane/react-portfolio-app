@@ -13,8 +13,8 @@ export const GlobalStyles = createGlobalStyle`
 
 html,
 body {
+	color: ${GlobalColors.white1};
 	background: ${GlobalColors.bgDark1};
-	height:120vh;
 }
 
 img,
