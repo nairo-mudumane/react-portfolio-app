@@ -518,6 +518,14 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-smooth-scrollbar@^8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@types/react-smooth-scrollbar/-/react-smooth-scrollbar-8.0.4.tgz#9d11552fd1a0bb20ad43c17ed3aab73e9280e1a1"
+  integrity sha512-/GgEIw2ZS4GKOYdvdd7wJRhBajqOq7nSPEelY4OJ9bSwE1Elq3KUm+e0P3JYr/lZTLdZ8OpIm++cLlwDvEP8ag==
+  dependencies:
+    "@types/react" "*"
+    smooth-scrollbar "^8.2.5"
+
 "@types/react-transition-group@^4.4.4":
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.4.tgz#acd4cceaa2be6b757db61ed7b432e103242d163e"
@@ -652,6 +660,11 @@ convert-source-map@^1.5.0, convert-source-map@^1.7.0:
   integrity sha512-+OQdjP49zViI/6i7nIJpA8rAl4sV/JdPfU9nZs3VqOwGIgizICvuN2ru6fMd+4llL0tar18UYJXfZ/TWtmhUjA==
   dependencies:
     safe-buffer "~5.1.1"
+
+core-js@^3.6.4:
+  version "3.21.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.21.1.tgz#f2e0ddc1fc43da6f904706e8e955bc19d06a0d94"
+  integrity sha512-FRq5b/VMrWlrmCzwRrpDYNxyHP9BcAZC+xHJaqTgIE5091ZV1NTmyh0sGOg5XqpnHvR0svdy0sv1gWA1zmhxig==
 
 cosmiconfig@^6.0.0:
   version "6.0.0"
@@ -948,6 +961,11 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+
 lodash@^4.17.11:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
@@ -1084,6 +1102,11 @@ react-router@6.2.2-pre.0:
   dependencies:
     history "^5.2.0"
 
+react-smooth-scrollbar@^8.0.6:
+  version "8.0.6"
+  resolved "https://registry.yarnpkg.com/react-smooth-scrollbar/-/react-smooth-scrollbar-8.0.6.tgz#179072e6a547b3af589ea303c50fd86366275edc"
+  integrity sha512-yWiIC4L8DwfIRkLL+PdXq5rysEm6trxHzRk1Rx82bzuu2aWDcHhT+l1vXH/73Re/zHmGjBgrxts/wIrwC6yYJA==
+
 react-transition-group@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.2.tgz#8b59a56f09ced7b55cbd53c36768b922890d5470"
@@ -1151,6 +1174,15 @@ shallowequal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
+smooth-scrollbar@^8.2.5, smooth-scrollbar@^8.7.4:
+  version "8.7.4"
+  resolved "https://registry.yarnpkg.com/smooth-scrollbar/-/smooth-scrollbar-8.7.4.tgz#1cf3978c1702587c5ffed69806e00511440b2f6d"
+  integrity sha512-BSqZJExXoGbl9FGA4ci33DNmlHFRvDxJk4Q8OXmYykRLa1Hzg2YiV5slVogMd1UsxzNf6m0nralT8GdanKWoYw==
+  dependencies:
+    core-js "^3.6.4"
+    lodash-es "^4.17.21"
+    tslib "^1.10.0"
+
 source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
@@ -1198,6 +1230,11 @@ to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
   integrity sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
+
+tslib@^1.10.0:
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
+  integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
 typescript@^4.5.4:
   version "4.6.2"
