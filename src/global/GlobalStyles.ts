@@ -14,11 +14,10 @@ export const GlobalStyles = createGlobalStyle`
 html,
 body {
 	color: ${GlobalColors.white1};
-	/* background: ${GlobalColors.bgDark1}; */
-	background-color: transparent;
-    	background-image: linear-gradient(180deg, rgba(1, 3, 38, 0) 52%, #010326),
-        linear-gradient(95deg, #010326 43%, rgba(1, 3, 38, 0.15));
-	background-repeat: repeat-y;
+	background: linear-gradient(180deg, rgba(1, 3, 38, 0) 52%, #010326),
+        linear-gradient(95deg, #010326 66%, rgba(1, 3, 38, 0.10));
+	background-repeat: no-repeat;
+	min-height: 100vh;
 }
 
 img,
