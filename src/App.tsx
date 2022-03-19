@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import { Footer } from "./components";
 import { GlobalStyles } from "./global";
 import { Home } from "./pages";
 
@@ -8,8 +9,9 @@ export const App = () => {
         <>
             <GlobalStyles />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route caseSensitive path="/" element={<Home />} />
             </Routes>
+            <Footer />
         </>
     );
 };

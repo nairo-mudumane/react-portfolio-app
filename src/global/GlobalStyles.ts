@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
 *::after {
 	padding: 0;
 	margin: 0;
+	outline: none;
 	box-sizing: border-box;
 	transition: all .2s ease;
 }
@@ -14,10 +15,15 @@ export const GlobalStyles = createGlobalStyle`
 html,
 body {
 	color: ${GlobalColors.white1};
-	background: linear-gradient(180deg, rgba(1, 3, 38, 0) 52%, #010326),
-        linear-gradient(95deg, #010326 66%, rgba(1, 3, 38, 0.10));
-	background-repeat: no-repeat;
-	min-height: 100vh;
+	background: ${GlobalColors.bgDark1};
+}
+
+a {
+	color: inherit;
+	font: inherit;
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 img,
