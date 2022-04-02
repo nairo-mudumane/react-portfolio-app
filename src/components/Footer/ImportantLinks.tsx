@@ -1,6 +1,7 @@
 import React from "react";
-import { List, ListItem, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
+import { AppPages } from "../../database";
 
 export const ImportantLinks = () => {
     return (
@@ -9,20 +10,17 @@ export const ImportantLinks = () => {
                 Important links
             </Typography>
 
-            <List>
-                <ListItem>
-                    <NavLink to="/">Home</NavLink>
-                </ListItem>
-                <ListItem>
-                    <NavLink to="/about">About</NavLink>
-                </ListItem>
-                <ListItem>
-                    <NavLink to="/projects">Projects</NavLink>
-                </ListItem>
-                <ListItem>
-                    <NavLink to="/contacts">Contacts</NavLink>
-                </ListItem>
-            </List>
+            <Box component="nav">
+                <Box className="menu" component="ul">
+                    {AppPages.map((page) => (
+                        <Box className="item" component="li" key={page.link}>
+                            <NavLink to={page.link} className="link">
+                                <Button color="inherit">{page.label}</Button>
+                            </NavLink>
+                        </Box>
+                    ))}
+                </Box>
+            </Box>
         </React.Fragment>
     );
 };

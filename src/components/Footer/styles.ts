@@ -16,12 +16,28 @@ export const FooterStyles = styled.footer`
         padding-bottom: 1rem;
         padding-right: 2rem;
     }
+
     .heading {
         margin-bottom: 0.5rem;
     }
 
     & ul {
         padding: 0;
+    }
+
+    .item {
+        list-style: none;
+        margin: 0.5rem;
+    }
+
+    .link {
+        &:hover {
+            color: ${GlobalColors.blue1};
+        }
+    }
+
+    .link.active {
+        color: ${GlobalColors.blue1};
     }
 
     @media only screen and (max-width: 375px) {
