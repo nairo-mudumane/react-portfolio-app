@@ -36,10 +36,16 @@ export const UnderMaintenceStyles = styled.div`
         overflow: hidden;
 
         max-width: 22rem;
+        height: 390px;
         padding: 0.3rem;
+
+        & > img {
+            height: 100%;
+        }
     }
     .image,
     .image > img {
+        object-fit: cover;
         border-radius: 6px;
     }
 
@@ -50,7 +56,8 @@ export const UnderMaintenceStyles = styled.div`
     }
 
     .title {
-        font-size: 4em;
+        font-size: 3.6em;
+        font-weight: bold;
         margin-bottom: 5rem;
     }
 
@@ -60,6 +67,19 @@ export const UnderMaintenceStyles = styled.div`
 
     .social-media {
         margin-top: 2rem;
+    }
+
+    .link-item {
+        background: #dfeaef;
+        color: #1c6ed2;
+        margin-top: 0.5rem;
+        margin-right: 1rem;
+
+        &:hover {
+            background: #dfeaef;
+            color: #1c6ed2;
+            opacity: 0.7;
+        }
     }
 
     @media only screen and (max-width: 1024px) {
@@ -89,9 +109,13 @@ export const UnderMaintenceStyles = styled.div`
         .content {
             padding-top: 10rem;
         }
+
         .title {
             font-size: 1em;
             margin-bottom: 1rem;
+        }
+        .image {
+            max-width: 100%;
         }
     }
 `;

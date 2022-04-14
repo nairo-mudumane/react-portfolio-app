@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Button, Container } from "@mui/material";
+import { Box, Typography, Button, Container } from "@mui/material";
 import { LinkedIn, GitHub, Facebook } from "@mui/icons-material";
 import { UnderMaintenceStyles } from "./styles";
 import imageSrc from "../../assets/images/about-page-img.png";
@@ -8,8 +8,8 @@ export default function UnderMaintence() {
     return (
         <UnderMaintenceStyles>
             <Container>
-                <div className="content">
-                    <div className="hero">
+                <Box className="content">
+                    <Box className="hero">
                         <Typography variant="body2" component="p">
                             Hey, I'm
                         </Typography>
@@ -32,15 +32,16 @@ export default function UnderMaintence() {
                             soon as I can.
                         </Typography>
 
-                        <div className="social-media">
+                        <Box className="social-media">
                             <Typography variant="body1" className="text">
                                 Please follow me on my social media bellow:
                             </Typography>
 
-                            <div className="links">
+                            <Box className="links">
                                 <Button
                                     href="https://github.com/nairo-mudumane"
                                     target="_blank"
+                                    className="link-item"
                                 >
                                     <GitHub />
                                 </Button>
@@ -48,6 +49,7 @@ export default function UnderMaintence() {
                                 <Button
                                     href="https://www.linkedin.com/in/nairo-mudumane"
                                     target="_blank"
+                                    className="link-item"
                                 >
                                     <LinkedIn />
                                 </Button>
@@ -55,17 +57,21 @@ export default function UnderMaintence() {
                                 <Button
                                     href="https://www.facebook.com/nayro.mudumane/"
                                     target="_blank"
+                                    className="link-item"
                                 >
                                     <Facebook />
                                 </Button>
-                            </div>
-                        </div>
-                    </div>
+                            </Box>
+                        </Box>
+                    </Box>
 
-                    <div className="image">
-                        <img src={imageSrc} alt="" />
-                    </div>
-                </div>
+                    <Box className="image">
+                        <img
+                            src="https://scontent.fmpm3-1.fna.fbcdn.net/v/t39.30808-6/269693196_2729651987335856_799489277980992897_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=gw3uYpLLftsAX_1Q6DT&_nc_ht=scontent.fmpm3-1.fna&oh=00_AT9Y-zalQbIi5AFvvG-nF2t-t9iWgv-x5jbq_LeC7qJq-g&oe=625C7FF4"
+                            alt=""
+                        />
+                    </Box>
+                </Box>
             </Container>
         </UnderMaintenceStyles>
     );
