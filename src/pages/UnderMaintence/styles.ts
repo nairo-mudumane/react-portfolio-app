@@ -72,6 +72,7 @@ export const UnderMaintenceStyles = styled.div`
     .link-item {
         background: #dfeaef;
         color: #1c6ed2;
+
         margin-top: 0.5rem;
         margin-right: 1rem;
 
