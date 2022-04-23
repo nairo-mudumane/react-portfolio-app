@@ -30,6 +30,10 @@ export const FooterStyles = styled.footer`
         margin: 0.5rem;
     }
 
+    .social-media {
+        margin-top: 1rem;
+    }
+
     .link {
         &:hover {
             color: ${GlobalColors.blue1};
