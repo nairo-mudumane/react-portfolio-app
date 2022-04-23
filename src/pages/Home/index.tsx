@@ -1,7 +1,12 @@
-export default function Home() {
+import { StyledHome } from "./styles";
+import bannerSrc from "../../assets/images/home-2.jpg";
+
+export function Home() {
     return (
-        <div>
-            <p>home page</p>
-        </div>
+        <StyledHome>
+            <div className="banner">
+                <img src={bannerSrc} alt="" />
+            </div>
+        </StyledHome>
     );
 }
