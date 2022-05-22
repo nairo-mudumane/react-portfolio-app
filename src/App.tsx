@@ -5,15 +5,15 @@ import { GlobalStyles } from "./global";
 import { Home } from "./pages";
 
 export const App = () => {
-    return (
-        <React.Fragment>
-            <GlobalStyles />
+  return (
+    <React.Fragment>
+      <GlobalStyles />
 
-            <Header />
-            <Routes>
-                <Route caseSensitive path="/" element={<Home />} />
-            </Routes>
-            <Footer />
-        </React.Fragment>
-    );
+      {/* <Header /> */}
+      <Routes>
+        <Route caseSensitive path="/" element={<Home />} />
+      </Routes>
+      {/* <Footer /> */}
+    </React.Fragment>
+  );
 };

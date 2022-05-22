@@ -1,11 +1,10 @@
 import styled from "styled-components";
+import dots from "../../assets/images/dots.png";
 
 export const StyledHome = styled.div`
-    .banner {
-        height: 530px;
+  background: url(${dots}), transparent;
+  background-size: contain;
 
-        & > img {
-            object-fit: contain;
-        }
-    }
+  width: 100%;
+  height: 100vh;
 `;
