@@ -1,12 +1,12 @@
 import React from "react";
-import { HeaderStyles } from "./styles";
+import { ActiveLinkStyles, HeaderStyles } from "./styles";
 import { Box, Button, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import { AppPages } from "../../database";
 import { useMediaQuery } from "react-responsive";
 import { DesktopHeader } from "./DesktopHeader";
-import { pages } from "./config";
+import { PAGES_LINKS } from "./config";
 import { TabletOrMobile } from "./TabletOrMobile";
 
 export default function Header() {
@@ -16,8 +16,9 @@ export default function Header() {
 
     return (
         <HeaderStyles>
-            {isTabletOrMobile && <TabletOrMobile />}
-            {isDesktopOrLaptop && <DesktopHeader pages={pages} />}
+            <ActiveLinkStyles />
+            {isTabletOrMobile && <TabletOrMobile pages={PAGES_LINKS} />}
+            {isDesktopOrLaptop && <DesktopHeader pages={PAGES_LINKS} />}
         </HeaderStyles>
     );
 }

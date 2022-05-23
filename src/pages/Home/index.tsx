@@ -5,13 +5,7 @@ import { StyledHome } from "./styles";
 export function Home() {
     return (
         <StyledHome>
-            <Box className="landing">
-                <Title>Aute excepteur sint.</Title>
-
-                <Text muted>
-                    Proident fugiat ut cupidatat labore cupidatat.
-                </Text>
-            </Box>
+            <Text>home</Text>
         </StyledHome>
     );
 }

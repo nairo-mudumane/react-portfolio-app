@@ -5,7 +5,7 @@ export const GlobalColors = {
 
     black1: "#333",
 
-    blue1: "#171941",
+    blue1: "#217de0",
     blue2: "#344675",
     blue3: "#1f2251",
 

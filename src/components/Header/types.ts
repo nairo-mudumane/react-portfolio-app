@@ -1,8 +1,8 @@
-export interface IPages {
+export interface IPagesLinks {
     link: string;
     label: string;
 }
 
 export interface IHeaderProps {
-    pages: IPages[];
+    pages: IPagesLinks[];
 }

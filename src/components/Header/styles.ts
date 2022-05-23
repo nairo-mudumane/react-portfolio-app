@@ -1,65 +1,11 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { GlobalColors } from "../../global";
 
 export const HeaderStyles = styled.div`
-    width: 100%;
+    width: max-content;
     padding: 2rem 0;
-
-    .header {
-        background: ${GlobalColors.bgDark2};
-        width: 100%;
-        margin-bottom: 1rem;
-        position: fixed;
-        top: 0;
-    }
-
-    nav {
-        padding: 1rem 2rem;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        justify-content: flex-start;
-        align-items: flex-start;
-
-        width: max-content;
-        margin: 0 auto;
-    }
-
-    .item {
-        list-style: none;
-        margin: 0.5rem;
-    }
-
-    .link {
-        text-decoration: none;
-
-        &:hover {
-            color: ${GlobalColors.blue1};
-        }
-    }
-
-    .link.active {
-        color: ${GlobalColors.blue1};
-    }
-
-    /* mobile */
-    .mobile-menu-icon {
-        width: 4rem;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-
-        cursor: pointer;
-        display: none;
-        outline: none;
-        * {
-            pointer-events: none;
-        }
-    }
+    margin-left: auto;
+    position: relative;
 
     @media only screen and (max-width: 768px) {
         .mobile-menu-icon {
@@ -69,5 +15,63 @@ export const HeaderStyles = styled.div`
 `;
 
 export const StyledTabletOrMobile = styled.div`
-    background: red;
+    .btn-container {
+    }
+
+    .menu-icon {
+        color: ${GlobalColors.white1};
+        font-size: 1.4em;
+    }
+`;
+
+export const StyledPaperProps = {
+    minWidth: "300px",
+    overflow: "visible",
+    filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+    mt: 1.5,
+    "& .MuiAvatar-root": {
+        width: 32,
+        height: 32,
+        ml: -0.5,
+        mr: 1,
+    },
+    "&:before": {
+        content: '""',
+        display: "block",
+        position: "absolute",
+        top: 0,
+        right: 14,
+        width: 10,
+        height: 10,
+        bgcolor: "background.paper",
+        transform: "translateY(-50%) rotate(45deg)",
+        zIndex: 0,
+    },
+
+    MenuItem: {
+        width: "100%",
+    },
+    link: {
+        width: "100%",
+    },
+    textLink: {
+        textDecoration: "none",
+    },
+};
+
+export const ActiveLinkStyles = createGlobalStyle`
+.link {
+    color: ${GlobalColors.gray1};
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.icon.link {
+    margin-top: 2px;
+}
+
+.link.active,
+.link.active .link {
+    color: ${GlobalColors.blue1};
+}
 `;
