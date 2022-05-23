@@ -51,6 +51,7 @@ svg {
 
 .text.bold {
 	font-weight: 700;
+	text-transform: uppercase;
 }
 
 [data-scrollbar] {

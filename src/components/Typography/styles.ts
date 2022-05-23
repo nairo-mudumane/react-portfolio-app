@@ -11,14 +11,10 @@ export const StyledTypography = styled.div<ITypographyStyle>`
                 return `opacity: 0.7`;
             }
         }}
+    }
 
-        ${(props) => {
-            if (props.textType === "title") {
-                return `
-                color: ${GlobalColors.gray1};
-                font-size: 3em;
-                `;
-            }
-        }}
+    & .text.bold {
+        color: ${GlobalColors.gray1};
+        font-size: 1.5em;
     }
 `;

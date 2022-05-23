@@ -1,7 +1,4 @@
-export const PAGES_LINKS = [
-    { link: "/", label: "Home" },
-    { link: "/about", label: "About" },
-];
+export const PAGES_LINKS = [{ link: "/", label: "Home" }];
 
 export const MOBILE_MENU_PROPS = {
     PaperProps: {

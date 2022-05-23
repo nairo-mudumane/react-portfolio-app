@@ -72,3 +72,41 @@ export const ActiveLinkStyles = createGlobalStyle`
     color: ${GlobalColors.blue1};
 }
 `;
+
+export const StyledDesktopHeader = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .link.desktop:not(.link.active) {
+        color: ${GlobalColors.white1};
+    }
+
+    .btn {
+        color: ${GlobalColors.white1};
+        background: ${GlobalColors.blue2};
+
+        &:hover,
+        &:focus {
+            background: ${GlobalColors.blue2};
+            opacity: 0.7;
+        }
+    }
+`;
