@@ -15,6 +15,8 @@ export const GlobalStyles = createGlobalStyle`
 html,
 body {
 	color: ${GlobalColors.white1};
+	font-family: 'Andada Pro', serif;
+	font-weight: 400;
 	background: ${GlobalColors.bgDark2};
 }
 
@@ -31,6 +33,25 @@ svg {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.text {
+	font-family: 'Andada Pro', serif;
+	color: ${GlobalColors.white1};
+	line-height: 1.2;
+	margin-bottom:.3rem;
+}
+
+.text.italic {
+	font-style:italic;
+}
+
+.text.normal {
+	font-weight: 400;
+}
+
+.text.bold {
+	font-weight: 700;
 }
 
 [data-scrollbar] {
