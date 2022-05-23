@@ -37,7 +37,8 @@ svg {
 
 .text {
 	color: ${GlobalColors.white1};
-	margin-bottom:.3rem;
+	font-size: 1em;
+	margin-bottom: 0.3rem;
 }
 
 .text.italic {
