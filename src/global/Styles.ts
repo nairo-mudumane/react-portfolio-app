@@ -36,9 +36,7 @@ svg {
 }
 
 .text {
-	font-family: 'Andada Pro', serif;
 	color: ${GlobalColors.white1};
-	line-height: 1.2;
 	margin-bottom:.3rem;
 }
 
