@@ -1,19 +1,11 @@
 import React from "react";
 import { Home, Info, MenuOpen } from "@mui/icons-material";
-import {
-    Box,
-    IconButton,
-    ListItemIcon,
-    Menu,
-    MenuItem,
-    Tooltip,
-} from "@mui/material";
+import { IconButton, ListItemIcon, Menu, MenuItem } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { Container } from "../Container";
-import { Text, Title } from "../Typography";
+import { Text } from "../Typography";
 import { StyledPaperProps, StyledTabletOrMobile } from "./styles";
-import { IHeaderProps, IPagesLinks } from "./types";
-import { MOBILE_MENU_PROPS } from "./config";
+import { IHeaderProps } from "./types";
 
 export function TabletOrMobile(props: IHeaderProps) {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
