@@ -1,6 +1,12 @@
 import React from "react";
 import { Home, Info, MenuOpen } from "@mui/icons-material";
-import { IconButton, ListItemIcon, Menu, MenuItem } from "@mui/material";
+import {
+    IconButton,
+    ListItemIcon,
+    Menu,
+    MenuItem,
+    Snackbar,
+} from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { Container } from "../Container";
 import { Text } from "../Typography";
@@ -22,14 +28,20 @@ export function TabletOrMobile(props: IHeaderProps) {
     return (
         <Container>
             <StyledTabletOrMobile>
-                <IconButton
-                    onClick={openMenu}
-                    aria-controls={isMenuOpen ? "account-menu" : undefined}
-                    aria-haspopup="true"
-                    aria-expanded={isMenuOpen ? "true" : undefined}
+                <Snackbar
+                    open
+                    autoHideDuration={Infinity}
+                    anchorOrigin={{ vertical: "top", horizontal: "right" }}
                 >
-                    <MenuOpen className="menu-icon" />
-                </IconButton>
+                    <IconButton
+                        onClick={openMenu}
+                        aria-controls={isMenuOpen ? "account-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={isMenuOpen ? "true" : undefined}
+                    >
+                        <MenuOpen className="menu-icon" />
+                    </IconButton>
+                </Snackbar>
 
                 <Menu
                     open={isMenuOpen}

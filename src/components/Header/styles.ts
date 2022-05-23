@@ -2,10 +2,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import { GlobalColors } from "../../global";
 
 export const HeaderStyles = styled.div`
-    width: max-content;
     padding: 2rem 0;
-    margin-left: auto;
-    position: relative;
 
     @media only screen and (max-width: 768px) {
         .mobile-menu-icon {
@@ -15,8 +12,8 @@ export const HeaderStyles = styled.div`
 `;
 
 export const StyledTabletOrMobile = styled.div`
-    .btn-container {
-    }
+    width: max-content;
+    margin-left: auto;
 
     .menu-icon {
         color: ${GlobalColors.white1};
@@ -25,7 +22,7 @@ export const StyledTabletOrMobile = styled.div`
 `;
 
 export const StyledPaperProps = {
-    minWidth: "300px",
+    minWidth: "200px",
     overflow: "visible",
     filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
     mt: 1.5,
@@ -61,7 +58,7 @@ export const StyledPaperProps = {
 
 export const ActiveLinkStyles = createGlobalStyle`
 .link {
-    color: ${GlobalColors.gray1};
+    color: ${GlobalColors.black1};
     text-transform: uppercase;
     text-decoration: none;
 }
