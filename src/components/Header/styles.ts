@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { GlobalColors } from "../../global";
 
 export const HeaderStyles = styled.div`
+    width: 100%;
+    padding: 2rem 0;
+
     .header {
         background: ${GlobalColors.bgDark2};
         width: 100%;
@@ -63,4 +66,8 @@ export const HeaderStyles = styled.div`
             display: block;
         }
     }
+`;
+
+export const StyledTabletOrMobile = styled.div`
+    background: red;
 `;
