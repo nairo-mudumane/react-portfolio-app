@@ -1,11 +1,10 @@
-import { Box, Typography } from "@mui/material";
-import { Text, Title } from "../../components";
+import { Landing } from "./Landing";
 import { StyledHome } from "./styles";
 
 export function Home() {
     return (
         <StyledHome>
-            <Text>home</Text>
+            <Landing />
         </StyledHome>
     );
 }
