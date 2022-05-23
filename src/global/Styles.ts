@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
 html,
 body {
 	color: ${GlobalColors.white1};
-	background: ${GlobalColors.bgDark1};
+	background: ${GlobalColors.bgDark2};
 }
 
 a {
