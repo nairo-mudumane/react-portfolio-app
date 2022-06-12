@@ -1,33 +1,51 @@
 import styled from "styled-components";
 import blur1 from "../../assets/images/blur1.svg";
+import { globalColors } from "../../global/Colors";
 
-export const StyledHome = styled.div`
-    .banner {
-        height: 530px;
-
-        & > img {
-            object-fit: contain;
-        }
-    }
-`;
+export const StyledHome = styled.div``;
 
 export const StyledLanding = styled.div`
-    background-color: rgba(0, 0, 0, 0.7);
-
     width: 100%;
-    height: 80vh;
-    position: relative;
+    padding: 5rem 0;
 
-    &::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
-        background: url(${blur1}), transparent;
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position-x: 90%;
-        background-position-y: 10%;
+    .heading,
+    .title,
+    .description,
+    .link-works {
+        text-align: center;
+        width: max-content;
+        margin: 0.5rem auto;
+    }
+
+    .heading {
+        margin-bottom: 0;
+    }
+
+    .title {
+        color: ${globalColors.blue1};
+        font-weight: 550;
+    }
+
+    .description {
+        max-width: 600px;
+    }
+
+    .btn {
+        background-color: ${globalColors.blue1};
+
+        &:hover,
+        &:focus {
+            opacity: 0.7;
+            background-color: ${globalColors.blue1};
+        }
     }
 `;

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { globalColors } from "./Colors";
 
 export const GlobalStyles = createGlobalStyle`
 *,
@@ -13,8 +14,8 @@ export const GlobalStyles = createGlobalStyle`
 
 html,
 body {
+	color: ${globalColors.black1};
 	font-weight: 400;
-	
 }
 
 
