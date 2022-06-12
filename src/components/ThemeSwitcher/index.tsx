@@ -18,7 +18,7 @@ export function ThemeSwitcher() {
     return (
         <StyledThemeSwitcher isDark={isDark}>
             <IconButton onClick={toggleTheme} className="btn">
-                {isDark ? <DarkMode /> : <LightMode />}
+                {isDark ? <LightMode /> : <DarkMode />}
             </IconButton>
         </StyledThemeSwitcher>
     );
