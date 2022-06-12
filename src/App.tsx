@@ -1,16 +1,16 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import { GlobalStyles } from "./global";
-import { UnderMaintence } from "./pages";
+import { ThemeSwitcher } from "./components/";
+import { GlobalStyles } from "./global/Styles";
+import { useTheme } from "./hooks";
+import { AppRoutes } from "./routes";
 
-export const App = () => {
+export default function App() {
+    const { isDark } = useTheme();
     return (
-        <>
-            <GlobalStyles />
-            <Routes>
-                <Route path="/" element={<UnderMaintence />} />
-                <Route path="/*" element={<UnderMaintence />} />
-            </Routes>
-        </>
+        <React.Fragment>
+            <GlobalStyles isDark={isDark} />
+            <ThemeSwitcher />
+            <AppRoutes />
+        </React.Fragment>
     );
-};
+}
