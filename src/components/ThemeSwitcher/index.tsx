@@ -4,7 +4,7 @@ import { StyledThemeSwitcher } from "./styles";
 import { useTheme } from "../../hooks";
 
 export function ThemeSwitcher() {
-    const { currentTheme, changeTheme } = useTheme();
+    const { currentTheme, isDark, changeTheme } = useTheme();
 
     function toggleTheme() {
         if (currentTheme === "Dark") {
@@ -16,13 +16,10 @@ export function ThemeSwitcher() {
     }
 
     return (
-        <StyledThemeSwitcher>
-            <Box className="container">
-                <IconButton onClick={toggleTheme}>
-                    {currentTheme === "Dark" && <DarkMode />}
-                    {currentTheme === "Light" && <LightMode />}
-                </IconButton>
-            </Box>
+        <StyledThemeSwitcher isDark={isDark}>
+            <IconButton onClick={toggleTheme} className="btn">
+                {isDark ? <DarkMode /> : <LightMode />}
+            </IconButton>
         </StyledThemeSwitcher>
     );
 }

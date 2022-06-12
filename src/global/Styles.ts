@@ -1,7 +1,9 @@
 import { createGlobalStyle } from "styled-components";
+import { useTheme } from "../hooks";
+import { ICurrentTheme } from "../types";
 import { globalColors } from "./Colors";
 
-export const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle<ICurrentTheme>`
 *,
 *::before,
 *::after {
@@ -9,13 +11,16 @@ export const GlobalStyles = createGlobalStyle`
 	margin: 0;
 	outline: none;
 	box-sizing: border-box;
-	transition: all .2s ease;
 }
 
 html,
 body {
-	color: ${globalColors.black1};
+	color: ${(props) => (props.isDark ? globalColors.white1 : globalColors.black1)};
 	font-weight: 400;
+	background-color: ${(props) =>
+        props.isDark ? globalColors.bgDark : globalColors.bgLight};
+
+	transition: background-color .2s ease;
 }
 
 
