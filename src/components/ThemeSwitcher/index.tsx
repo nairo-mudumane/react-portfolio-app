@@ -1,11 +1,9 @@
-import React from "react";
-import { Box, IconButton, Typography } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import { DarkMode, LightMode } from "@mui/icons-material";
 import { StyledThemeSwitcher } from "./styles";
 import { useTheme } from "../../hooks";
 
 export function ThemeSwitcher() {
-    const [icon, setIcon] = React.useState();
     const { currentTheme, changeTheme } = useTheme();
 
     function toggleTheme() {
