@@ -5,6 +5,7 @@ export const globalColors = {
     blue1: "#4f46e5",
 
     white1: "#d1d5db",
+    white2: "#dee9f2",
 
     gray1: "#cbd5e1",
     gray2: "#e2e8f0",
