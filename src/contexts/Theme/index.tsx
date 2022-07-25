@@ -1,6 +1,11 @@
 import React from "react";
 import { IChildren } from "../../types";
 import { IThemeContext } from "./types";
+import { getLocalTheme, setLocalTheme } from "./utils";
+
+const previousTheme = getLocalTheme();
+
+console.log(previousTheme);
 
 const initialState: IThemeContext = {
     currentTheme: "Dark",
@@ -15,6 +20,7 @@ export function ThemeProvider(props: IChildren) {
 
     function changeTheme(newTheme: "Dark" | "Light") {
         setTheme(newTheme);
+        setLocalTheme({ currentTheme: newTheme });
         setIsDark(!isDark);
     }
 
