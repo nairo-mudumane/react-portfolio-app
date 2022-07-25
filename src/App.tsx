@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeSwitcher } from "./components/";
+import { Header } from "./components/";
 import { GlobalStyles } from "./global/Styles";
 import { useTheme } from "./hooks";
 import { AppRoutes } from "./routes";
@@ -9,7 +9,7 @@ export default function App() {
     return (
         <React.Fragment>
             <GlobalStyles isDark={isDark} />
-            <ThemeSwitcher />
+            <Header />
             <AppRoutes />
         </React.Fragment>
     );
