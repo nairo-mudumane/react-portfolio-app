@@ -48,8 +48,8 @@ export const StyledHero = styled.div<ICurrentTheme>`
     }
 
     .hero {
-        flex: 1 1 400px;
-        max-width: 400px;
+        flex: 1 1 460px;
+        max-width: 460px;
         margin-bottom: 2rem;
     }
 
@@ -91,3 +91,5 @@ export const StyledHero = styled.div<ICurrentTheme>`
         }
     }
 `;
+
+export const StyledServices = styled.div<ICurrentTheme>``;
