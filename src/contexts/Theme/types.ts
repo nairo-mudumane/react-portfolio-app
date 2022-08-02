@@ -1,8 +1,12 @@
-export interface IThemeContext {
+export interface IPageTheme {
     currentTheme: "Dark" | "Light";
-    isDark: boolean;
-    changeTheme?: (newTheme: "Dark" | "Light") => void;
 }
 
-export interface ILocalThemeProps
-    extends Omit<IThemeContext, "isDark" | "changeTheme"> {}
+export interface IThemeContext extends IPageTheme {
+    isDark: boolean;
+    changeTheme: (newTheme: "Dark" | "Light") => void;
+}
+
+export interface ILocalThemeProps {
+    theme: "Dark" | "Light";
+}

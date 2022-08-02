@@ -1,18 +1,14 @@
 import { ILocalThemeProps } from "./types";
 
 export function setLocalTheme(config: ILocalThemeProps): void {
-    if (config.currentTheme) {
-        return window.localStorage.setItem("theme", config.currentTheme);
-    }
-    return;
+    // console.log(config);
+    return window.localStorage.setItem("theme", config.theme);
 }
 
-export function getLocalTheme(): string | null {
-    const str = window.localStorage.getItem("theme");
-    if (str) {
-        const json = JSON.parse(str);
-        console.log(json);
-        // return json.theme;
+export function getLocalTheme(): "Dark" | "Light" | null {
+    const theme = window.localStorage.getItem("theme");
+    if (theme !== null) {
+        return theme as "Dark" | "Light";
     }
     return null;
 }
