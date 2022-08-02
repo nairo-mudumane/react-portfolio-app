@@ -11,6 +11,7 @@ export const globalColors = {
 
     gray1: "#cbd5e1",
     gray2: "#e2e8f0",
+    gray3: "#1e253c",
 
     black1: "#4b5563",
 };

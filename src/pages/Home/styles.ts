@@ -93,7 +93,29 @@ export const StyledHero = styled.div<ICurrentTheme>`
 `;
 
 export const StyledServices = styled.div<ICurrentTheme>`
-    .title {
-        margin-bottom: 2rem;
+    .list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .item {
+        flex: 0 1 380px;
+        padding: 0.5rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .item {
+            flex: 0 1 340px;
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        .item {
+            flex: 0 1 100%;
+        }
     }
 `;
