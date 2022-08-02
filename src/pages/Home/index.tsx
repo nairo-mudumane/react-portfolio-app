@@ -1,10 +1,13 @@
-import { Landing } from "./Landing";
+import { useTheme } from "../../hooks";
+import { Hero } from "./sections";
 import { StyledHome } from "./styles";
 
 export function Home() {
+    const { isDark } = useTheme();
+
     return (
-        <StyledHome>
-            <Landing />
+        <StyledHome isDark={isDark}>
+            <Hero />
         </StyledHome>
     );
 }

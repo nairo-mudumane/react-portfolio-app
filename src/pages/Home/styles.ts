@@ -1,51 +1,93 @@
 import styled from "styled-components";
 import blur1 from "../../assets/images/blur1.svg";
 import { globalColors } from "../../global/Colors";
+import { ICurrentTheme } from "../../types";
 
-export const StyledHome = styled.div``;
+export const StyledHome = styled.div<ICurrentTheme>``;
 
-export const StyledLanding = styled.div`
+export const StyledHero = styled.div<ICurrentTheme>`
     width: 100%;
-    padding: 5rem 0;
+    margin: 1rem 0;
 
     .content {
+        padding: 2rem 0;
+        margin: 0 auto;
+
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .image {
+        display: flex;
         align-items: center;
+        justify-content: center;
+
+        background-color: transparent;
+        border: 2px solid
+            ${(props) =>
+                props.isDark ? globalColors.gray1 : globalColors.blue2};
+        overflow: hidden;
+
+        max-width: 320px;
+        height: 390px;
+        padding: 0.2rem;
+
+        & > img {
+            height: 100%;
+        }
     }
 
-    .heading,
-    .title,
-    .description,
-    .link-works {
-        text-align: center;
-        width: max-content;
-        margin: 0.5rem auto;
+    .image,
+    .image > img {
+        object-fit: cover;
+        border-radius: 6px;
     }
 
-    .heading {
-        margin-bottom: 0;
+    .hero {
+        flex: 1 1 400px;
+        max-width: 400px;
+        margin-bottom: 2rem;
     }
 
     .title {
-        color: ${globalColors.blue1};
-        font-weight: 550;
+        font-size: 3.6em;
+        font-weight: bold;
+        color: ${(props) =>
+            props.isDark ? globalColors.white1 : globalColors.blue1};
+
+        margin-bottom: 5rem;
     }
 
-    .description {
-        max-width: 600px;
+    .text {
+        max-width: 30rem;
     }
 
-    .btn {
-        background-color: ${globalColors.blue1};
+    .social-media {
+        margin-top: 1rem;
+    }
 
-        &:hover,
-        &:focus {
-            opacity: 0.7;
-            background-color: ${globalColors.blue1};
+    .link-item {
+        background-color: ${(props) =>
+            props.isDark ? globalColors.white1 : globalColors.gray1};
+        color: ${(props) =>
+            props.isDark ? globalColors.black1 : globalColors.black1};
+
+        margin-top: 0.5rem;
+        margin-right: 1rem;
+
+        &:hover {
+            background: #dfeaef;
+            color: ${globalColors.blue2};
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .title {
+            margin-bottom: 2.5rem;
         }
     }
 `;
