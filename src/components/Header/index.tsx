@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, Button, Card, IconButton, Menu, Modal } from "@mui/material";
+import {
+    Box,
+    Button,
+    Card,
+    Container,
+    IconButton,
+    Menu,
+    Modal,
+} from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../../hooks";
 import { ThemeSwitcher } from "../ThemeSwitcher";
@@ -19,33 +27,57 @@ export function Header() {
 
     return (
         <React.Fragment>
-            <StyledHeader isDark={isDark}>
-                <ThemeSwitcher />
-                <Box className="header" component="header">
-                    <Box component="nav">
-                        <IconButton
-                            onClick={toggleModalMobile}
-                            className="btn mobile"
-                        >
-                            <MenuOutlined />
-                        </IconButton>
-
-                        {isModalMenuMobileOpen && (
-                            <Box
-                                component="ul"
-                                className="ul mobile"
-                                onBlur={toggleModalMobile}
+            <Container>
+                <StyledHeader isDark={isDark}>
+                    <Box className="header" component="header">
+                        <Box component="nav">
+                            <IconButton
+                                onClick={toggleModalMobile}
+                                className="btn mobile"
                             >
-                                {PAGES.map((page, index) => (
+                                <MenuOutlined />
+                            </IconButton>
+
+                            {isModalMenuMobileOpen && (
+                                <Box
+                                    component="ul"
+                                    className="ul mobile"
+                                    onBlur={toggleModalMobile}
+                                >
+                                    {PAGES.map((page, index) => (
+                                        <Box
+                                            key={page.link}
+                                            component="li"
+                                            className="li mobile"
+                                        >
+                                            <NavLink
+                                                to={page.link}
+                                                onClick={toggleModalMobile}
+                                                className="link mobile"
+                                            >
+                                                <Button
+                                                    variant="text"
+                                                    color="inherit"
+                                                    className="btn"
+                                                >
+                                                    {page.label}
+                                                </Button>
+                                            </NavLink>
+                                        </Box>
+                                    ))}
+                                </Box>
+                            )}
+
+                            <Box component="ul" className="ul desktop">
+                                {PAGES.map((page) => (
                                     <Box
                                         key={page.link}
                                         component="li"
-                                        className="li mobile"
+                                        className="li"
                                     >
                                         <NavLink
                                             to={page.link}
-                                            onClick={toggleModalMobile}
-                                            className="link mobile"
+                                            className="link"
                                         >
                                             <Button
                                                 variant="text"
@@ -58,30 +90,12 @@ export function Header() {
                                     </Box>
                                 ))}
                             </Box>
-                        )}
-
-                        <Box component="ul" className="ul desktop">
-                            {PAGES.map((page) => (
-                                <Box
-                                    key={page.link}
-                                    component="li"
-                                    className="li"
-                                >
-                                    <NavLink to={page.link} className="link">
-                                        <Button
-                                            variant="text"
-                                            color="inherit"
-                                            className="btn"
-                                        >
-                                            {page.label}
-                                        </Button>
-                                    </NavLink>
-                                </Box>
-                            ))}
                         </Box>
                     </Box>
-                </Box>
-            </StyledHeader>
+
+                    <ThemeSwitcher />
+                </StyledHeader>
+            </Container>
         </React.Fragment>
     );
 }

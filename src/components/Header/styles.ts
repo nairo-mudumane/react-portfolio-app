@@ -3,6 +3,13 @@ import { globalColors } from "../../global/Colors";
 import { ICurrentTheme } from "../../types";
 
 export const StyledHeader = styled.div<ICurrentTheme>`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
     &,
     .header,
     .nav {
