@@ -1,7 +1,13 @@
-import { IChildren } from "../../types";
+import { IChildren, ICurrentTheme } from "../../types";
 
 export interface ITitleProps extends IChildren {
     text: string;
-    isHead?: boolean;
     icon?: React.ReactNode;
+    isHead?: boolean;
+    noMargin?: boolean;
+    className?: string;
+}
+
+export interface IStyledTitle extends ICurrentTheme {
+    noMargin?: boolean;
 }

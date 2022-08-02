@@ -9,7 +9,7 @@ export function Title(props: ITitleProps) {
 
     return (
         <React.Fragment>
-            <StyledTitle isDark={isDark}>
+            <StyledTitle isDark={isDark} {...props}>
                 {props.icon && <Box className="icon">{props.icon}</Box>}
 
                 <Typography

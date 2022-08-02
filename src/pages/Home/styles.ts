@@ -92,4 +92,8 @@ export const StyledHero = styled.div<ICurrentTheme>`
     }
 `;
 
-export const StyledServices = styled.div<ICurrentTheme>``;
+export const StyledServices = styled.div<ICurrentTheme>`
+    .title {
+        margin-bottom: 2rem;
+    }
+`;

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { globalColors } from "../../global/Colors";
-import { ICurrentTheme } from "../../types";
+import { IStyledTitle } from "./types";
 
-export const StyledTitle = styled.div<ICurrentTheme>`
+export const StyledTitle = styled.div<IStyledTitle>`
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -19,5 +19,11 @@ export const StyledTitle = styled.div<ICurrentTheme>`
         font-weight: bold;
         color: ${(props) =>
             props.isDark ? globalColors.white1 : globalColors.blue1};
+
+        ${(props) => {
+            if (!props.noMargin) {
+                return `margin-bottom: 1rem`;
+            }
+        }};
     }
 `;
