@@ -29,7 +29,7 @@ export const StyledHero = styled.div<ICurrentTheme>`
         background-color: transparent;
         border: 2px solid
             ${(props) =>
-                props.isDark ? globalColors.gray1 : globalColors.blue2};
+                props.isDark ? globalColors.gray1 : globalColors.blue1};
         overflow: hidden;
 
         max-width: 320px;
