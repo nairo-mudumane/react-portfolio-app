@@ -10,8 +10,8 @@ export const Services = () => {
 
     return (
         <Container>
-            <StyledServices isDark={isDark}>
-                <Section>
+            <Section>
+                <StyledServices isDark={isDark}>
                     <ScrollAnimation
                         animateOnce
                         duration={0.8}
@@ -33,8 +33,8 @@ export const Services = () => {
                             </Box>
                         ))}
                     </Box>
-                </Section>
-            </StyledServices>
+                </StyledServices>
+            </Section>
         </Container>
     );
 };

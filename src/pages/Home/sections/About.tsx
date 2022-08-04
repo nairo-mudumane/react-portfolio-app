@@ -12,8 +12,8 @@ export const About = () => {
 
     return (
         <Container>
-            <StyledAbout isDark={isDark}>
-                <Section>
+            <Section>
+                <StyledAbout isDark={isDark}>
                     <ScrollAnimation
                         animateOnce
                         duration={0.8}
@@ -65,8 +65,8 @@ export const About = () => {
                             />
                         </Box>
                     </Box>
-                </Section>
-            </StyledAbout>
+                </StyledAbout>
+            </Section>
         </Container>
     );
 };

@@ -190,3 +190,5 @@ export const StyledAbout = styled.div<ICurrentTheme>`
         }
     }
 `;
+
+export const StyledWorks = styled.div<ICurrentTheme>``;
