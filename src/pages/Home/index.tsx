@@ -1,5 +1,5 @@
 import { useTheme } from "../../hooks";
-import { Hero, Services } from "./sections";
+import { About, Hero, Services } from "./sections";
 import { StyledHome } from "./styles";
 
 export function Home() {
@@ -9,6 +9,7 @@ export function Home() {
         <StyledHome isDark={isDark}>
             <Hero />
             <Services />
+            <About />
         </StyledHome>
     );
 }
