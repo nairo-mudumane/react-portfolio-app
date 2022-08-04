@@ -55,8 +55,7 @@ export const StyledHero = styled.div<ICurrentTheme>`
     }
 
     .hero {
-        flex: 1 1 460px;
-        max-width: 460px;
+        flex: 1 1 420px;
         margin-bottom: 2rem;
     }
 
