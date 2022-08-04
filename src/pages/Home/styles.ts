@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-import blur1 from "../../assets/images/blur1.svg";
 import { globalColors } from "../../global/Colors";
 import { ICurrentTheme } from "../../types";
 
@@ -27,6 +26,13 @@ export const GlobalHomeStyles = createGlobalStyle<ICurrentTheme>`
 .image > img {
     object-fit: cover;
     border-radius: 6px;
+}
+
+@media only screen and (max-width: 425px) {
+    .image {
+        max-width: unset;
+        width: 100%;
+    }
 }
 `;
 
@@ -121,4 +127,54 @@ export const StyledServices = styled.div<ICurrentTheme>`
     }
 `;
 
-export const StyledAbout = styled.div<ICurrentTheme>``;
+export const StyledAbout = styled.div<ICurrentTheme>`
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .description {
+        flex: 1 1 300px;
+        padding: 0 1rem;
+        padding-right: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .text {
+        text-align: justify;
+    }
+
+    .actions {
+        margin-top: 1rem;
+    }
+
+    .btn {
+        color: ${(props) =>
+            props.isDark ? globalColors.white1 : globalColors.blue1};
+        border-color: ${(props) =>
+            props.isDark ? globalColors.white1 : globalColors.blue1};
+
+        &:hover,
+        &:focus {
+            color: ${(props) =>
+                props.isDark ? globalColors.blue1 : globalColors.blue2};
+            border-color: ${(props) =>
+                props.isDark ? globalColors.blue1 : globalColors.blue2};
+        }
+    }
+
+    .image {
+        max-width: unset;
+        width: 440px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .description {
+            padding: 0 1rem;
+        }
+    }
+`;
