@@ -1,6 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import ScrollAnimation from "react-animate-on-scroll";
 import { CardProject, Section, Title } from "../../../components";
+import { MY_PROJECTS } from "../../../database";
 import { useTheme } from "../../../hooks";
 import { StyledWorks } from "../styles";
 
@@ -16,7 +17,7 @@ export function Works() {
                         duration={0.8}
                         animateIn="animate__fadeIn"
                     >
-                        <Title text="Some Recent Works" />
+                        <Title text="Some Top Works" />
                     </ScrollAnimation>
 
                     <Box className="section-description">
@@ -26,7 +27,13 @@ export function Works() {
                         </Typography>
                     </Box>
 
-                    <Box className="works-list">{/* <CardProject /> */}</Box>
+                    <Box className="works-list">
+                        {MY_PROJECTS.map((project) => (
+                            <Box key={project.uid} className="item">
+                                <CardProject project={project} />
+                            </Box>
+                        ))}
+                    </Box>
                 </StyledWorks>
             </Section>
         </Container>
