@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import ScrollAnimation from "react-animate-on-scroll";
-import { CardProject, CardWork, Section, Title } from "../../../components";
+import { CardProject, Section, Title } from "../../../components";
 import { useTheme } from "../../../hooks";
 import { StyledWorks } from "../styles";
 
@@ -26,9 +26,7 @@ export function Works() {
                         </Typography>
                     </Box>
 
-                    <Box className="works-list">
-                        <CardProject />
-                    </Box>
+                    <Box className="works-list">{/* <CardProject /> */}</Box>
                 </StyledWorks>
             </Section>
         </Container>

@@ -1,16 +1,13 @@
-export interface IProjectLink {
+interface IProjectLink {
     type: "url" | "git";
     url: string;
 }
 
-export interface IProjectTools {
-    label: string;
-    link?: string;
-}
-
 export interface IProject {
+    uid: string;
     name: string;
-    description: string[];
-    link: IProjectLink;
     banner: string;
+    tools: string[];
+    description?: string[];
+    link?: IProjectLink;
 }
