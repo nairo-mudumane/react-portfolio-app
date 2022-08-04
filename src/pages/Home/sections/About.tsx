@@ -40,8 +40,17 @@ export const About = () => {
                             </Typography>
 
                             <Box className="actions">
+                                <NavLink to="/works" className="link">
+                                    <Button variant="contained" className="btn">
+                                        My Works
+                                    </Button>
+                                </NavLink>
+
                                 <NavLink to="/about" className="link">
-                                    <Button variant="outlined" className="btn">
+                                    <Button
+                                        variant="outlined"
+                                        className="btn outlined"
+                                    >
                                         Read More
                                     </Button>
                                 </NavLink>

@@ -152,9 +152,22 @@ export const StyledAbout = styled.div<ICurrentTheme>`
     }
 
     .btn {
+        color: ${globalColors.white1};
+        border-color: ${globalColors.blue1};
+
+        &:not(last-child) {
+            margin-right: 0.5rem;
+        }
+
+        &:hover,
+        &:focus {
+            color: ${globalColors.white1};
+            border-color: ${globalColors.blue2};
+        }
+    }
+
+    .btn.outlined {
         color: ${(props) =>
-            props.isDark ? globalColors.white1 : globalColors.blue1};
-        border-color: ${(props) =>
             props.isDark ? globalColors.white1 : globalColors.blue1};
 
         &:hover,
