@@ -1,6 +1,6 @@
-import { Box, Card, Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import ScrollAnimation from "react-animate-on-scroll";
-import { Section, Title } from "../../../components";
+import { CardProject, CardWork, Section, Title } from "../../../components";
 import { useTheme } from "../../../hooks";
 import { StyledWorks } from "../styles";
 
@@ -27,7 +27,7 @@ export function Works() {
                     </Box>
 
                     <Box className="works-list">
-                        <p>works here</p>
+                        <CardProject />
                     </Box>
                 </StyledWorks>
             </Section>
