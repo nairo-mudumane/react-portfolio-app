@@ -1,6 +1,6 @@
 import { Box, Container } from "@mui/material";
 import ScrollAnimation from "react-animate-on-scroll";
-import { Section, Service, Title } from "../../../components";
+import { CardService, Section, Title } from "../../../components";
 import { MY_SERVICES } from "../../../database";
 import { useTheme } from "../../../hooks";
 import { StyledServices } from "../styles";
@@ -28,7 +28,7 @@ export const Services = () => {
                                     duration={index + 0.3}
                                     animateIn="animate__zoomIn"
                                 >
-                                    <Service service={service} />
+                                    <CardService service={service} />
                                 </ScrollAnimation>
                             </Box>
                         ))}

@@ -1,13 +1,13 @@
 import { Box, Typography } from "@mui/material";
 import { useTheme } from "../../hooks";
-import { StyledService } from "./styles";
+import { StyledCardService } from "./styles";
 import { IServiceProps } from "./types";
 
-export function Service(props: IServiceProps) {
+export function CardService(props: IServiceProps) {
     const { isDark } = useTheme();
 
     return (
-        <StyledService isDark={isDark}>
+        <StyledCardService isDark={isDark}>
             {props.service.icon && (
                 <Box className="icon-container">{props.service.icon}</Box>
             )}
@@ -19,6 +19,6 @@ export function Service(props: IServiceProps) {
             <Typography variant="body2" className="description">
                 {props.service.description}
             </Typography>
-        </StyledService>
+        </StyledCardService>
     );
 }
