@@ -44,4 +44,16 @@ export const StyledCardService = styled.div<ICurrentTheme>`
     }
 `;
 
-export const StyledCardProject = styled.article<ICurrentTheme>``;
+export const StyledCardProject = styled.article<ICurrentTheme>`
+    &,
+    .card {
+        background-color: ${(props) =>
+            props.isDark ? globalColors.gray3 : globalColors.white1};
+
+        &:hover,
+        &:focus {
+            background-color: ${(props) =>
+                props.isDark ? "#1e253c5c" : "#cbd5e182"};
+        }
+    }
+`;
