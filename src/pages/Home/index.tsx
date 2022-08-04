@@ -1,15 +1,20 @@
+import React from "react";
 import { useTheme } from "../../hooks";
 import { About, Hero, Services } from "./sections";
-import { StyledHome } from "./styles";
+import { GlobalHomeStyles, StyledHome } from "./styles";
 
 export const Home = () => {
     const { isDark } = useTheme();
 
     return (
-        <StyledHome isDark={isDark}>
-            <Hero />
-            <Services />
-            <About />
-        </StyledHome>
+        <React.Fragment>
+            <GlobalHomeStyles isDark={isDark} />
+
+            <StyledHome isDark={isDark}>
+                <Hero />
+                <Services />
+                <About />
+            </StyledHome>
+        </React.Fragment>
     );
 };

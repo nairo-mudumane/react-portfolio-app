@@ -1,7 +1,34 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import blur1 from "../../assets/images/blur1.svg";
 import { globalColors } from "../../global/Colors";
 import { ICurrentTheme } from "../../types";
+
+export const GlobalHomeStyles = createGlobalStyle<ICurrentTheme>`
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    border: 2px solid
+        ${(props) => (props.isDark ? globalColors.gray1 : globalColors.blue1)};
+    overflow: hidden;
+
+    max-width: 320px;
+    height: 390px;
+    padding: 0.2rem;
+
+    & > img {
+        height: 100%;
+    }
+}
+
+.image,
+.image > img {
+    object-fit: cover;
+    border-radius: 6px;
+}
+`;
 
 export const StyledHome = styled.div<ICurrentTheme>``;
 
@@ -19,32 +46,6 @@ export const StyledHero = styled.div<ICurrentTheme>`
         align-content: flex-start;
         justify-content: space-between;
         align-items: flex-start;
-    }
-
-    .image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background-color: transparent;
-        border: 2px solid
-            ${(props) =>
-                props.isDark ? globalColors.gray1 : globalColors.blue1};
-        overflow: hidden;
-
-        max-width: 320px;
-        height: 390px;
-        padding: 0.2rem;
-
-        & > img {
-            height: 100%;
-        }
-    }
-
-    .image,
-    .image > img {
-        object-fit: cover;
-        border-radius: 6px;
     }
 
     .hero {
@@ -119,3 +120,5 @@ export const StyledServices = styled.div<ICurrentTheme>`
         }
     }
 `;
+
+export const StyledAbout = styled.div<ICurrentTheme>``;

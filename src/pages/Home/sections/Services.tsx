@@ -12,7 +12,13 @@ export const Services = () => {
         <Container>
             <StyledServices isDark={isDark}>
                 <Section>
-                    <Title text="My Services" />
+                    <ScrollAnimation
+                        animateOnce
+                        duration={0.8}
+                        animateIn="animate__fadeIn"
+                    >
+                        <Title text="My Services" />
+                    </ScrollAnimation>
 
                     <Box className="list">
                         {MY_SERVICES.map((service, index) => (

@@ -1,9 +1,9 @@
+import { Facebook, GitHub, LinkedIn } from "@mui/icons-material";
 import { Box, Button, Container, Typography } from "@mui/material";
 import { useTheme } from "../../../hooks";
 import { StyledHero } from "../styles";
 
 import bannerSrc from "../../../assets/images/nairo-mudumane.jpg";
-import { Facebook, GitHub, LinkedIn } from "@mui/icons-material";
 
 export const Hero = () => {
     const { isDark } = useTheme();
