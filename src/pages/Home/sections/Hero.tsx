@@ -5,7 +5,7 @@ import { StyledHero } from "../styles";
 import bannerSrc from "../../../assets/images/nairo-mudumane.jpg";
 import { Facebook, GitHub, LinkedIn } from "@mui/icons-material";
 
-export function Hero() {
+export const Hero = () => {
     const { isDark } = useTheme();
 
     return (
@@ -73,4 +73,4 @@ export function Hero() {
             </StyledHero>
         </Container>
     );
-}
+};

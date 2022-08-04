@@ -5,7 +5,7 @@ import { MY_SERVICES } from "../../../database";
 import { useTheme } from "../../../hooks";
 import { StyledServices } from "../styles";
 
-export function Services() {
+export const Services = () => {
     const { isDark } = useTheme();
 
     return (
@@ -31,4 +31,4 @@ export function Services() {
             </StyledServices>
         </Container>
     );
-}
+};

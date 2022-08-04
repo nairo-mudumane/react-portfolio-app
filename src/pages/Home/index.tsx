@@ -2,7 +2,7 @@ import { useTheme } from "../../hooks";
 import { About, Hero, Services } from "./sections";
 import { StyledHome } from "./styles";
 
-export function Home() {
+export const Home = () => {
     const { isDark } = useTheme();
 
     return (
@@ -12,4 +12,4 @@ export function Home() {
             <About />
         </StyledHome>
     );
-}
+};
