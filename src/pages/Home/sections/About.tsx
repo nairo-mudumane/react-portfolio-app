@@ -24,46 +24,74 @@ export const About = () => {
 
                     <Box className="content">
                         <Box className="description">
-                            <Typography variant="body1" className="text">
-                                Cupidatat enim fugiat et esse enim commodo enim
-                                amet est quis esse velit sunt. Nisi minim fugiat
-                                fugiat fugiat excepteur est sit et duis. Cillum
-                                qui ullamco cupidatat dolore sit enim aliquip
-                                mollit reprehenderit in. Do velit est culpa
-                                veniam officia dolor aliquip excepteur ullamco
-                                minim ad anim voluptate elit. Proident
-                                exercitation reprehenderit occaecat nulla fugiat
-                                aliqua sunt ea cupidatat eu. Mollit aliquip
-                                nostrud adipisicing duis nisi laboris ad sit
-                                veniam. Reprehenderit veniam reprehenderit
-                                excepteur exercitation culpa aute do.
-                            </Typography>
+                            <ScrollAnimation
+                                animateOnce
+                                duration={0.8}
+                                animateIn="animate__fadeIn"
+                            >
+                                <Typography variant="body1" className="text">
+                                    Cupidatat enim fugiat et esse enim commodo
+                                    enim amet est quis esse velit sunt. Nisi
+                                    minim fugiat fugiat fugiat excepteur est sit
+                                    et duis. Cillum qui ullamco cupidatat dolore
+                                    sit enim aliquip mollit reprehenderit in. Do
+                                    velit est culpa veniam officia dolor aliquip
+                                    excepteur ullamco minim ad anim voluptate
+                                    elit. Proident exercitation reprehenderit
+                                    occaecat nulla fugiat aliqua sunt ea
+                                    cupidatat eu. Mollit aliquip nostrud
+                                    adipisicing duis nisi laboris ad sit veniam.
+                                    Reprehenderit veniam reprehenderit excepteur
+                                    exercitation culpa aute do.
+                                </Typography>
+                            </ScrollAnimation>
 
                             <Box className="actions">
-                                <NavLink to="/works" className="link">
-                                    <Button variant="contained" className="btn">
-                                        My Works
-                                    </Button>
-                                </NavLink>
+                                <ScrollAnimation
+                                    animateOnce
+                                    duration={0.5}
+                                    animateIn="animate__flipInX"
+                                >
+                                    <NavLink to="/works" className="link">
+                                        <Button
+                                            variant="contained"
+                                            className="btn"
+                                        >
+                                            My Works
+                                        </Button>
+                                    </NavLink>
+                                </ScrollAnimation>
 
-                                <NavLink to="/about" className="link">
-                                    <Button
-                                        variant="outlined"
-                                        className="btn outlined"
-                                    >
-                                        Read More
-                                    </Button>
-                                </NavLink>
+                                <ScrollAnimation
+                                    animateOnce
+                                    duration={0.8}
+                                    animateIn="animate__flipInX"
+                                >
+                                    <NavLink to="/about" className="link">
+                                        <Button
+                                            variant="outlined"
+                                            className="btn outlined"
+                                        >
+                                            Read More
+                                        </Button>
+                                    </NavLink>
+                                </ScrollAnimation>
                             </Box>
                         </Box>
 
-                        <Box className="image">
-                            <img
-                                src={photoSrc}
-                                srcSet={photoSrc}
-                                alt="Nairo Mudumane's photo"
-                            />
-                        </Box>
+                        <ScrollAnimation
+                            animateOnce
+                            duration={0.8}
+                            animateIn="animate__fadeIn"
+                        >
+                            <Box className="image">
+                                <img
+                                    src={photoSrc}
+                                    srcSet={photoSrc}
+                                    alt="Nairo Mudumane's photo"
+                                />
+                            </Box>
+                        </ScrollAnimation>
                     </Box>
                 </StyledAbout>
             </Section>

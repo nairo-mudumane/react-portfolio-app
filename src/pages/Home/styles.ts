@@ -148,6 +148,12 @@ export const StyledAbout = styled.div<ICurrentTheme>`
     }
 
     .actions {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-top: 1rem;
     }
 
