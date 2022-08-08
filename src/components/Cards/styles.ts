@@ -50,10 +50,76 @@ export const StyledCardProject = styled.article<ICurrentTheme>`
         background-color: ${(props) =>
             props.isDark ? globalColors.gray3 : globalColors.white1};
 
+        /* min-height: 300px; */
+
         &:hover,
         &:focus {
             background-color: ${(props) =>
                 props.isDark ? "#1e253c5c" : "#cbd5e182"};
         }
+    }
+
+    .banner-image {
+        width: 100%;
+        cursor: pointer;
+
+        &:hover .link {
+            text-decoration: underline;
+        }
+    }
+
+    .project-title {
+        margin-bottom: 1rem;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .tools {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .chip {
+        margin: 0.5rem 0;
+
+        &:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .git-data {
+        margin-bottom: 1rem;
+    }
+
+    .git-info {
+        display: flex;
+        margin: 0.3rem;
+    }
+
+    .link {
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: center;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    .icon {
+        font: inherit;
+        width: 1.5rem;
+        margin-right: 0.5rem;
     }
 `;

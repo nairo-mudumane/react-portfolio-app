@@ -27,7 +27,7 @@ export function Projects() {
                         </Typography>
                     </Box>
 
-                    <Box className="Projects-list">
+                    <Box className="projects-list">
                         {MY_PROJECTS.map((project) => (
                             <Box key={project.uid} className="item">
                                 <CardProject project={project} />

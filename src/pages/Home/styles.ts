@@ -210,6 +210,7 @@ export const StyledProjects = styled.div<ICurrentTheme>`
 
     .item {
         flex: 0 1 48%;
+        max-width: 48%;
         margin: 0.5rem;
     }
 
