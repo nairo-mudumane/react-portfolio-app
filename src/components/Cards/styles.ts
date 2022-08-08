@@ -103,10 +103,13 @@ export const StyledCardProject = styled.article<ICurrentTheme>`
     }
 
     .git-data {
-        margin: 1rem 0;
-
         color: ${(props) =>
             props.isDark ? globalColors.white3 : globalColors.black1};
+
+        display: flex;
+        align-items: center;
+
+        margin: 1rem 0;
     }
 
     .git-info {
