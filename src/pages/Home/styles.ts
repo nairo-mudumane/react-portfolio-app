@@ -197,8 +197,8 @@ export const StyledAbout = styled.div<ICurrentTheme>`
     }
 `;
 
-export const StyledWorks = styled.div<ICurrentTheme>`
-    .works-list {
+export const StyledProjects = styled.div<ICurrentTheme>`
+    .projects-list {
         width: 100%;
         display: flex;
         flex-direction: row;

@@ -3,15 +3,15 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { CardProject, Section, Title } from "../../../components";
 import { MY_PROJECTS } from "../../../database";
 import { useTheme } from "../../../hooks";
-import { StyledWorks } from "../styles";
+import { StyledProjects } from "../styles";
 
-export function Works() {
+export function Projects() {
     const { isDark } = useTheme();
 
     return (
         <Container>
             <Section>
-                <StyledWorks isDark={isDark}>
+                <StyledProjects isDark={isDark}>
                     <ScrollAnimation
                         animateOnce
                         duration={0.8}
@@ -27,14 +27,14 @@ export function Works() {
                         </Typography>
                     </Box>
 
-                    <Box className="works-list">
+                    <Box className="Projects-list">
                         {MY_PROJECTS.map((project) => (
                             <Box key={project.uid} className="item">
                                 <CardProject project={project} />
                             </Box>
                         ))}
                     </Box>
-                </StyledWorks>
+                </StyledProjects>
             </Section>
         </Container>
     );
