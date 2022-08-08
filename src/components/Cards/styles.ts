@@ -50,60 +50,16 @@ export const StyledCardProject = styled.article<ICurrentTheme>`
         background-color: ${(props) =>
             props.isDark ? globalColors.gray3 : globalColors.white1};
 
-        /* min-height: 300px; */
-
-        &:hover,
+        /* &:hover,
         &:focus {
             background-color: ${(props) =>
-                props.isDark ? "#1e253c5c" : "#cbd5e182"};
-        }
-    }
-
-    .banner-image {
-        width: 100%;
-        cursor: pointer;
-
-        &:hover .link {
-            text-decoration: underline;
-        }
-    }
-
-    .project-title {
-        margin-bottom: 1rem;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-
-    .tools {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-bottom: 1rem;
-    }
-
-    .chip {
-        margin: 0.5rem 0;
-
-        &:not(:last-child) {
-            margin-right: 0.5rem;
-        }
-    }
-
-    .git-data {
-        margin-bottom: 1rem;
-    }
-
-    .git-info {
-        display: flex;
-        margin: 0.3rem;
+            props.isDark ? "#1e253c5c" : "#cbd5e182"};
+        } */
     }
 
     .link {
         width: max-content;
+
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -121,5 +77,81 @@ export const StyledCardProject = styled.article<ICurrentTheme>`
         font: inherit;
         width: 1.5rem;
         margin-right: 0.5rem;
+    }
+
+    .banner-image {
+        width: 100%;
+        cursor: pointer;
+
+        &:hover .link {
+            text-decoration: underline;
+        }
+    }
+
+    .project-title {
+        margin: 0.5rem 0;
+    }
+
+    .link {
+        color: ${(props) =>
+            props.isDark ? globalColors.white1 : globalColors.blue1};
+
+        .title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+
+    .git-data {
+        margin: 1rem 0;
+
+        color: ${(props) =>
+            props.isDark ? globalColors.white3 : globalColors.black1};
+    }
+
+    .git-info {
+        font-size: 0.8em;
+        display: flex;
+        margin: 0.3rem;
+
+        .icon {
+            width: 1rem;
+        }
+    }
+
+    .description {
+        color: ${(props) =>
+            props.isDark ? globalColors.white3 : globalColors.black1};
+        text-align: justify;
+        margin: 1rem 0;
+    }
+
+    .tools {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin-top: 1rem;
+    }
+
+    .chip {
+        color: ${(props) =>
+            props.isDark ? globalColors.white3 : globalColors.black1};
+
+        margin: 0.5rem 0;
+        &:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .git-data {
+        margin-bottom: 1rem;
+    }
+
+    .git-info {
+        display: flex;
+        margin: 0.3rem;
     }
 `;
