@@ -4,3 +4,4 @@ export * from "./Header";
 export * from "./Section";
 export * from "./Title";
 export * from "./Cards";
+export * from "./Modals";
