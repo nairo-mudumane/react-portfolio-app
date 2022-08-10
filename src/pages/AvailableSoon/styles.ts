@@ -38,6 +38,7 @@ export const StyledAvailableSoon = styled.div<ICurrentTheme>`
     .title {
         color: ${globalColors.blue1};
         font-weight: 600;
+        font-size: 5em;
         text-transform: uppercase;
     }
 
@@ -53,5 +54,26 @@ export const StyledAvailableSoon = styled.div<ICurrentTheme>`
         color: ${(props) =>
             props.isDark ? globalColors.white2 : globalColors.gray3};
         font-weight: 450;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .container {
+            max-width: unset;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 3.5em;
+        }
+
+        .description {
+            max-width: 300px;
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        .title {
+            font-size: 2.5em;
+        }
     }
 `;
