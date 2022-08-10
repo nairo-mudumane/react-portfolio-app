@@ -5,7 +5,7 @@ import { getLocalTheme, setLocalTheme } from "./utils";
 
 const prevState = getLocalTheme();
 const initialState: IPageTheme = {
-    currentTheme: prevState || "Dark",
+    currentTheme: prevState ? prevState : "Dark",
 };
 
 export const ThemeContext = React.createContext(initialState as IThemeContext);

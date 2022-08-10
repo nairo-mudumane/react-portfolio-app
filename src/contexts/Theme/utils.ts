@@ -1,7 +1,6 @@
 import { ILocalThemeProps } from "./types";
 
 export function setLocalTheme(config: ILocalThemeProps): void {
-    // console.log(config);
     return window.localStorage.setItem("theme", config.theme);
 }
 
