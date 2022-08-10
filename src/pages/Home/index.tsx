@@ -12,9 +12,9 @@ export const Home = () => {
 
             <StyledHome isDark={isDark}>
                 <Hero />
+                <Services />
                 <About />
                 <Projects />
-                <Services />
             </StyledHome>
         </React.Fragment>
     );

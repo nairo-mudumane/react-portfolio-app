@@ -62,7 +62,7 @@ export const About = () => {
                                     duration={0.5}
                                     animateIn="animate__flipInX"
                                 >
-                                    <NavLink to="/works" className="link">
+                                    <NavLink to="#" className="link">
                                         <Button
                                             variant="contained"
                                             className="btn"
@@ -77,7 +77,7 @@ export const About = () => {
                                     duration={0.8}
                                     animateIn="animate__flipInX"
                                 >
-                                    <NavLink to="/about" className="link">
+                                    <NavLink to="#" className="link">
                                         <Button
                                             variant="outlined"
                                             className="btn outlined"

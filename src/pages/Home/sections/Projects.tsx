@@ -20,17 +20,20 @@ export function Projects() {
                         <Title text="Some Top Works" />
                     </ScrollAnimation>
 
-                    <Box className="section-description">
-                        <Typography variant="body2" className="text-muted">
-                            Fugiat aliqua est exercitation ad adipisicing
-                            reprehenderit minim do sint ex occaecat.
-                        </Typography>
-                    </Box>
-
                     <Box className="projects-list">
-                        {MY_PROJECTS.map((project) => (
+                        {MY_PROJECTS.slice(0, 4).map((project, index) => (
                             <Box key={project.uid} className="item">
-                                <CardProject project={project} />
+                                <ScrollAnimation
+                                    animateOnce
+                                    duration={0.8}
+                                    animateIn={
+                                        index % 2 === 0
+                                            ? "animate__fadeInLeft"
+                                            : "animate__fadeInRight"
+                                    }
+                                >
+                                    <CardProject project={project} />
+                                </ScrollAnimation>
                             </Box>
                         ))}
                     </Box>
