@@ -148,6 +148,8 @@ export const StyledAbout = styled.div<ICurrentTheme>`
     }
 
     .text {
+        margin-bottom: 0.5rem;
+
         text-align: justify;
     }
 

@@ -30,19 +30,29 @@ export const About = () => {
                                 animateIn="animate__fadeIn"
                             >
                                 <Typography variant="body1" className="text">
-                                    Cupidatat enim fugiat et esse enim commodo
-                                    enim amet est quis esse velit sunt. Nisi
-                                    minim fugiat fugiat fugiat excepteur est sit
-                                    et duis. Cillum qui ullamco cupidatat dolore
-                                    sit enim aliquip mollit reprehenderit in. Do
-                                    velit est culpa veniam officia dolor aliquip
-                                    excepteur ullamco minim ad anim voluptate
-                                    elit. Proident exercitation reprehenderit
-                                    occaecat nulla fugiat aliqua sunt ea
-                                    cupidatat eu. Mollit aliquip nostrud
-                                    adipisicing duis nisi laboris ad sit veniam.
-                                    Reprehenderit veniam reprehenderit excepteur
-                                    exercitation culpa aute do.
+                                    I'm a fullstack web developer based in
+                                    Mozambique with over 4 years of experience.
+                                    I also have mobile development skills and a
+                                    keen interest in cyber security.
+                                </Typography>
+
+                                <Typography variant="body1" className="text">
+                                    I am very detail oriented, always attentive
+                                    to the smallest errors in the code. work
+                                    well under pressure and I have already
+                                    noticed that I can produce quality code even
+                                    working for short periods of time.
+                                </Typography>
+
+                                <Typography variant="body1" className="text">
+                                    In the context of programming languages I
+                                    currently work with JavaScript, PHP and a
+                                    little bit of Python. I also have knowledge
+                                    in technologies such as SQL, MySQL, React,
+                                    Firebase, Next, WordPress, among others. I'm
+                                    always looking for new challenges that allow
+                                    me to use my programming skills to solve
+                                    them.
                                 </Typography>
                             </ScrollAnimation>
 
