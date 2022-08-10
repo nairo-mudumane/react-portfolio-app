@@ -70,6 +70,10 @@ export const StyledHero = styled.div<ICurrentTheme>`
 
     .text {
         max-width: 30rem;
+
+        &.justify {
+            text-align: justify;
+        }
     }
 
     .social-media {

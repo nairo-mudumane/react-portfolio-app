@@ -28,11 +28,10 @@ export const Hero = () => {
                         <Typography variant="h4" className="subtitle text">
                             Thanks for visiting my portfolio.
                         </Typography>
-                        <Typography variant="body1" className="text">
-                            Ad mollit proident ea occaecat excepteur ad pariatur
-                            minim. Lorem culpa enim deserunt consectetur. Enim
-                            ex eiusmod ipsum incididunt reprehenderit quis
-                            tempor qui id est.
+                        <Typography variant="body1" className="text justify">
+                            I'm an information technology graduate with a
+                            penchant for web programming. Passionate about
+                            improving the graphical user experience.
                         </Typography>
 
                         <Box className="social-media">
