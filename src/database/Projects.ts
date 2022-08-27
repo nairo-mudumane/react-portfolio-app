@@ -92,7 +92,7 @@ export const MY_PROJECTS: IProject[] = [
     ],
     link: {
       type: "url",
-      url: "https://event.educa.co.mz/",
+      url: "https://educa.co.mz",
     },
     description: [
       "The biggest national education event. A true moment of convergence of thoughts, where several national and international agents of the education sector find space for exchange of experience, debate, presentation of proposals on the quality and challenges of the sector in the country.",
