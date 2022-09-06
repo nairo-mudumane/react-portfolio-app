@@ -3,7 +3,7 @@ import { Copyright as MuiCopyright } from "@mui/icons-material";
 import { StyledCopyright } from "./styles";
 import { useTheme } from "../../hooks";
 
-export default function Copyright() {
+export function Copyright() {
   const { isDark } = useTheme();
   const year = new Date().getFullYear().toString();
 

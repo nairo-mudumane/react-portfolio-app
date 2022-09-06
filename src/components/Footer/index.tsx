@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import { useTheme } from "../../hooks";
-import Copyright from "./Copyright";
+import { Copyright } from "./Copyright";
 import { StyledFooter } from "./styles";
 
 export function Footer() {
