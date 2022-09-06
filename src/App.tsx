@@ -19,7 +19,11 @@ export default function App() {
       <GlobalStyles isDark={isDark} />
       <Header />
       <AppRoutes />
-      <ModalToast open={isToastOpen} onClose={closeModalToast} />
+      <ModalToast
+        open={isToastOpen}
+        onClose={closeModalToast}
+        autoHideDuration={10000000}
+      />
     </React.Fragment>
   );
 }

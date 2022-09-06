@@ -6,20 +6,28 @@ import {
   SnackbarOrigin,
   Typography,
 } from "@mui/material";
+import Slide from "@mui/material/Slide";
+import { Close } from "@mui/icons-material";
 import { StyledToast } from "./styles";
 import { IToast } from "./types";
-import { Close } from "@mui/icons-material";
-
-// const handleClose = (
-//     event: React.SyntheticEvent | Event,
-//     reason?: string
-// ) => {
-//     if (reason === "clickaway") {
-//         return;
-//     }
-// };
 
 export function ModalToast(props: IToast) {
+  const defaultAnchorOrigin = {
+    vertical: "bottom",
+    horizontal: "right",
+  } as SnackbarOrigin;
+
+  const handleClose = (
+    event: React.SyntheticEvent | Event,
+    reason?: string
+  ) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    return props.onClose();
+  };
+
   const Action = (
     <React.Fragment>
       <StyledToast>
@@ -47,25 +55,21 @@ export function ModalToast(props: IToast) {
     </React.Fragment>
   );
 
-  const defaultAnchorOrigin = {
-    vertical: "bottom",
-    horizontal: "right",
-  } as SnackbarOrigin;
-
   if (props.open) {
     return (
       <React.Fragment>
         <Snackbar
+          action={Action}
           open={props.open}
-          onClose={props.onClose}
+          message={Message}
+          TransitionComponent={Slide}
+          onClose={handleClose}
           anchorOrigin={
             props.anchorOrigin ? { ...props.anchorOrigin } : defaultAnchorOrigin
           }
           autoHideDuration={
-            props.autoHideDuration ? props.autoHideDuration : Infinity
+            props.autoHideDuration ? props.autoHideDuration : 10000
           }
-          action={Action}
-          message={Message}
         />
       </React.Fragment>
     );
