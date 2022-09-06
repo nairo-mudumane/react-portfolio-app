@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "../../hooks";
-import { About, Hero, Projects, Services } from "./sections";
+import { About, Contact, Hero, Projects, Services } from "./sections";
 import { GlobalHomeStyles, StyledHome } from "./styles";
 
 export const Home = () => {
@@ -15,6 +15,7 @@ export const Home = () => {
         <Services />
         <About />
         <Projects />
+        <Contact />
       </StyledHome>
     </React.Fragment>
   );

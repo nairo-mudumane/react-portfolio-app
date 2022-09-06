@@ -224,3 +224,21 @@ export const StyledProjects = styled.div<ICurrentTheme>`
     }
   }
 `;
+
+export const StyledContact = styled.div<ICurrentTheme>`
+  .bg-section {
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+
+    background-color: ${(props) =>
+      props.isDark ? globalColors.gray3 : globalColors.gray1};
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+`;
