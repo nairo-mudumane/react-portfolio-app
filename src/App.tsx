@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, ModalToast } from "./components/";
+import { Footer, Header, ModalToast } from "./components/";
 import { GlobalStyles } from "./global/Styles";
 import { useTheme } from "./hooks";
 import { AppRoutes } from "./routes";
@@ -19,6 +19,7 @@ export default function App() {
       <GlobalStyles isDark={isDark} />
       <Header />
       <AppRoutes />
+      <Footer />
       <ModalToast
         open={isToastOpen}
         onClose={closeModalToast}
