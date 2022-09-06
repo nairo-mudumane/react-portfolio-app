@@ -6,19 +6,20 @@ import { AppRoutes } from "./routes";
 import "animate.css/animate.min.css";
 
 export default function App() {
-    const { isDark } = useTheme();
+  const { isDark } = useTheme();
 
-    const [isToastOpen, setIsToastOpen] = React.useState<boolean>(true);
-    function closeModalToast() {
-        setIsToastOpen(false);
-    }
+  const [isToastOpen, setIsToastOpen] = React.useState<boolean>(true);
 
-    return (
-        <React.Fragment>
-            <GlobalStyles isDark={isDark} />
-            <Header />
-            <AppRoutes />
-            <ModalToast open={isToastOpen} onClose={closeModalToast} />
-        </React.Fragment>
-    );
+  function closeModalToast() {
+    setIsToastOpen(false);
+  }
+
+  return (
+    <React.Fragment>
+      <GlobalStyles isDark={isDark} />
+      <Header />
+      <AppRoutes />
+      <ModalToast open={isToastOpen} onClose={closeModalToast} />
+    </React.Fragment>
+  );
 }

@@ -21,7 +21,7 @@ export function Projects() {
             <Title text="Some Top Works" />
           </ScrollAnimation>
 
-          <Masonry columns={2} spacing={2}>
+          <Masonry spacing={2} columns={2} className="masonry-root">
             {MY_PROJECTS.slice(0, 5).map((project, index) => (
               <Box key={project.uid} className="item">
                 <ScrollAnimation

@@ -209,8 +209,8 @@ export const StyledProjects = styled.div<ICurrentTheme>`
   }
 
   @media only screen and (max-width: 768px) {
-    .item {
-      flex: 0 1 340px;
+    .masonry-root {
+      flex-wrap: wrap;
     }
   }
 
