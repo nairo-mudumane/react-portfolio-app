@@ -27,42 +27,6 @@ export const MY_PROJECTS: IProject[] = [
   },
   {
     uid: uid4(),
-    banner: cassamo,
-    name: "Nuvunga's portfolio",
-    tools: [
-      "Firebase",
-      "EJS",
-      "NodeJS",
-      "Express",
-      "Animate CSS",
-      "AOS",
-      "Bootstrap",
-      "Light Box",
-    ],
-    link: {
-      type: "url",
-      url: "https://cassamonuvunga.com",
-    },
-    description: [
-      `Personal portfolio website of the founder of CADE, containing ideas, projects, testimonials, among other information`,
-    ],
-  },
-  {
-    uid: uid4(),
-    banner: ninjalist,
-    name: "Ninja List",
-    tools: ["TypeScript", "ReactJS", "NextJS", "Axios"],
-    link: {
-      type: "git",
-      url: "https://github.com/nairo-mudumane/ninjalist",
-    },
-    description: [
-      `A simple list of ${"ninjas"} app.`,
-      "The list is populated with data from the JSON Placeholder API (https://jsonplaceholder.typicode.com)",
-    ],
-  },
-  {
-    uid: uid4(),
     banner: liveEduca,
     name: "Educa Moçambique",
     tools: [
@@ -97,6 +61,42 @@ export const MY_PROJECTS: IProject[] = [
     description: [
       "The biggest national education event. A true moment of convergence of thoughts, where several national and international agents of the education sector find space for exchange of experience, debate, presentation of proposals on the quality and challenges of the sector in the country.",
       "Through this platform, users can participate remotely in the conference and fair (https://live.educa.co.mz). Create and manage your exhibitor account online through: https://educa.co.mz and https://educa.co.mz respectively",
+    ],
+  },
+  {
+    uid: uid4(),
+    banner: cassamo,
+    name: "Nuvunga's portfolio",
+    tools: [
+      "Firebase",
+      "EJS",
+      "NodeJS",
+      "Express",
+      "Animate CSS",
+      "AOS",
+      "Bootstrap",
+      "Light Box",
+    ],
+    link: {
+      type: "url",
+      url: "https://cassamonuvunga.com",
+    },
+    description: [
+      `Personal portfolio website of the founder of CADE, containing ideas, projects, testimonials, among other information`,
+    ],
+  },
+  {
+    uid: uid4(),
+    banner: ninjalist,
+    name: "Ninja List",
+    tools: ["TypeScript", "ReactJS", "NextJS", "Axios"],
+    link: {
+      type: "git",
+      url: "https://github.com/nairo-mudumane/ninjalist",
+    },
+    description: [
+      `A simple list of ${"ninjas"} app.`,
+      "The list is populated with data from the JSON Placeholder API (https://jsonplaceholder.typicode.com)",
     ],
   },
   {
