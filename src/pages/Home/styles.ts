@@ -197,6 +197,10 @@ export const StyledAbout = styled.div<ICurrentTheme>`
   }
 
   @media only screen and (max-width: 768px) {
+    .image {
+      width: 100%;
+    }
+
     .description {
       padding: 0 1rem;
     }
@@ -205,18 +209,18 @@ export const StyledAbout = styled.div<ICurrentTheme>`
 
 export const StyledProjects = styled.div<ICurrentTheme>`
   .item {
-    max-width: 48%;
+    width: 48%;
   }
 
   @media only screen and (max-width: 768px) {
-    .masonry-root {
-      flex-wrap: wrap;
+    .item {
+      width: 100%;
     }
   }
 
   @media only screen and (max-width: 425px) {
     .item {
-      flex: 1 1 100%;
+      width: 100%;
     }
   }
 `;

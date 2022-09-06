@@ -4,18 +4,18 @@ import { About, Hero, Projects, Services } from "./sections";
 import { GlobalHomeStyles, StyledHome } from "./styles";
 
 export const Home = () => {
-    const { isDark } = useTheme();
+  const { isDark } = useTheme();
 
-    return (
-        <React.Fragment>
-            <GlobalHomeStyles isDark={isDark} />
+  return (
+    <React.Fragment>
+      <GlobalHomeStyles isDark={isDark} />
 
-            <StyledHome isDark={isDark}>
-                <Hero />
-                <Services />
-                <About />
-                <Projects />
-            </StyledHome>
-        </React.Fragment>
-    );
+      <StyledHome isDark={isDark}>
+        <Hero />
+        <Services />
+        <About />
+        <Projects />
+      </StyledHome>
+    </React.Fragment>
+  );
 };

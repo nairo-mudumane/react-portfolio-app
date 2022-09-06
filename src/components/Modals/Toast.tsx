@@ -62,7 +62,7 @@ export function ModalToast(props: IToast) {
             props.anchorOrigin ? { ...props.anchorOrigin } : defaultAnchorOrigin
           }
           autoHideDuration={
-            props.autoHideDuration ? props.autoHideDuration : 8000
+            props.autoHideDuration ? props.autoHideDuration : Infinity
           }
           action={Action}
           message={Message}
